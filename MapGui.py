@@ -21,7 +21,6 @@ except ImportError:
 
 import MapGui_support
 
-
 global web_mapconfig_file
 
 
@@ -194,8 +193,12 @@ def donothing():
 
 def help():
     filewin = Toplevel(root)
-    button = Button(filewin, text="Do help button")
+    button = Button(filewin, text="Do help button", command=close_help)
     button.pack()
+
+
+def close_help():
+    print('closing')
 
 
 def about():
@@ -216,6 +219,7 @@ def vp_start_gui():
     filemenu.add_command(label="Reset", command=top.reset_MainWindow)
     filemenu.add_separator()
     filemenu.add_command(label="Open", command=top.app1_browse)
+
     filemenu.add_command(label="Save", command=top.save)
     filemenu.add_command(label="Save as...", command=top.saveas)
     filemenu.add_separator()
