@@ -790,7 +790,6 @@ class MicroStrategyMapConfig:
         self.App1ScrolledMapboxstatus.configure(state=DISABLED)
         self.App1ScrolledMapLocation.configure(state=DISABLED)
 
-
     def Remove_all_Keys(self):
         import xml.etree.ElementTree
         import tkMessageBox
@@ -1145,7 +1144,6 @@ class MicroStrategyMapConfig:
         self.Frame1.configure(highlightbackground="#d9d9d9")
         self.Frame1.configure(highlightcolor="black")
 
-
         self.app1MapKeyStatusLabel = Label(self.Frame1)
         self.app1MapKeyStatusLabel.place(relx=0.01, rely=0.375, relheight=.05, relwidth=.1)
         self.app1MapKeyStatusLabel.configure(activebackground="#f9f9f9")
@@ -1189,8 +1187,6 @@ class MicroStrategyMapConfig:
         self.Label20.configure(highlightbackground="#d9d9d9")
         self.Label20.configure(highlightcolor="black")
         self.Label20.configure(text='''Current Mapbox:''')
-
-
 
         self.App1KeyStatus = Label(self.Frame1)
         self.App1KeyStatus.place(relx=0.15, rely=0.35, relheight=.1, relwidth=.25)
