@@ -1336,17 +1336,6 @@ class MicroStrategyMapConfig:
         self.App1ScrolledGooglestatus.configure(selectforeground="black")
         self.App1ScrolledGooglestatus.configure(width=15)
         self.App1ScrolledGooglestatus.configure(state=DISABLED)
-        #
-        # self.Label29 = Label(self.Frame1)
-        # self.Label29.place(relx=0.01, rely=0.75, height=31, width=104)
-        # self.Label29.configure(activebackground="#f9f9f9")
-        # self.Label29.configure(activeforeground="black")
-        # self.Label29.configure(background="#d9d9d9")
-        # self.Label29.configure(disabledforeground="#a3a3a3")
-        # self.Label29.configure(foreground="#000000")
-        # self.Label29.configure(highlightbackground="#d9d9d9")
-        # self.Label29.configure(highlightcolor="black")
-        # self.Label29.configure(text='''New Google''')
 
         self.App1ScrolledMapboxstatus = ScrolledEntry(self.Frame1)
         self.App1ScrolledMapboxstatus.place(relx=0.15, rely=0.83, relheight=.1, relwidth=.70)
