@@ -21,6 +21,7 @@ except ImportError:
 
 import MapGui_support
 
+
 global web_mapconfig_file
 
 
@@ -218,7 +219,6 @@ def vp_start_gui():
     filemenu.add_command(label="Save", command=top.save)
     filemenu.add_command(label="Save as...", command=top.saveas)
     filemenu.add_separator()
-    # filemenu.add_command(label="Exit", command=CancelMainWindow)
     filemenu.add_command(label="Exit", command=destroy_MicroStrategyMapConfig)
     menubar.add_cascade(label="File", menu=filemenu)
 
@@ -290,12 +290,12 @@ def destroy_newKeysWindow():
     new_keys = None
 
 
-def CancelMainWindow():
-    import tkMessageBox
-    msg = tkMessageBox.askyesno("MicroStrategy Map Config", "Are you sure you want to cancel config window?")
-    if msg:
-        global root
-        root.quit()
+# def CancelMainWindow():
+#     import tkMessageBox
+#     msg = tkMessageBox.askyesno("MicroStrategy Map Config", "Are you sure you want to cancel config window?")
+#     if msg:
+#         global root
+#         root.quit()
 
 
 class MicroStrategyMapConfig:
@@ -498,13 +498,13 @@ class MicroStrategyMapConfig:
                 mapbox_check = 0
         return mapbox_check
 
-    def CancelMainWindow(self):
-
-        import tkMessageBox
-        msg = tkMessageBox.askyesno("MicroStrategy Map Config", "Are you sure you want to cancel config window?")
-        if msg:
-            global root
-            root.quit()
+    # def CancelMainWindow(self):
+    #
+    #     import tkMessageBox
+    #     msg = tkMessageBox.askyesno("MicroStrategy Map Config", "Are you sure you want to cancel config window?")
+    #     if msg:
+    #         global root
+    #         root.quit()
 
     def InputKeyWindow(self):
         # import tkSimpleDialog
@@ -1510,6 +1510,7 @@ class AutoScroll(object):
         #  Rozen. Added the try-except clauses so that this class
         #  could be used for scrolled entry widget for which vertical
         #  scrolling is not supported. 5/7/14.
+        global vsb
         try:
             vsb = ttk.Scrollbar(master, orient='vertical', command=self.yview)
         except:

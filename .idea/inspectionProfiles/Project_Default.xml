@@ -1,0 +1,18 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="MapGui.AutoScroll.master" />
+          <option value="list.__or__" />
+          <option value="MapGui.AutoScroll.grid" />
+          <option value="MapGui.AutoScroll.configure" />
+          <option value="MapGui.AutoScroll.xview" />
+          <option value="MapGui.AutoScroll.yview" />
+          <option value="MapGui.tkinter" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
